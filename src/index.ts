@@ -1,8 +1,9 @@
 import { createBaratheonTree } from "./families/baratheon";
-import { createBritishSuccessionTree } from "./families/britain";
+// import { createBritishSuccessionTree } from "./families/britain";
 import { createLannisterTree } from "./families/lannister";
 import { createStarkTree } from "./families/stark";
 // import { logAllPeopleInTree, logAllPeopleInTreeWithQueue } from "./solutions/solution";
+// eslint-disable-next-line
 import { logAllPeopleInTree, logAllPeopleInTreeWithQueue } from "./treeLogging";
 import { printBanner } from "./utils/bannerUtils";
 import { printPersonTreeAsAscii } from "./utils/toAsciiTree";
@@ -16,11 +17,11 @@ async function mainProgram() {
 
   // Uncomment to test your work..
 
-  // printBanner("LANNISTER");
-  // printPersonTreeAsAscii(createLannisterTree());
+  printBanner("LANNISTER");
+  printPersonTreeAsAscii(createLannisterTree());
 
-  // printBanner("All people in STARK")
-  // logAllPeopleInTree(createStarkTree());
+  printBanner("All people in STARK");
+  logAllPeopleInTree(createStarkTree());
 
   // printBanner("WITH STACK - british royals")
   // logAllPeopleInTree(createBritishSuccessionTree());
